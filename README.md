@@ -1,4 +1,4 @@
-<a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=1111&center=true&vCenter=true&repeat=false&width=435&height=30&lines=CMSP+Plataforma+Hacks"/>
+<a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=111111&center=true&vCenter=true&repeat=false&width=435&height=30&lines=CMSP+Plataforma+Hacks"/>
 <a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=false&width=435&height=30&lines=CMSP+Plataforma+Hacks"/>
 
 ---
