@@ -10,6 +10,8 @@
     <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/CMSP.md"><img width="10%" alt="CMSP" title="CMSP" src="https://i.imgur.com/DhzQFof.png"/></a>
     &#8287;&#8287;&#8287;&#8287;&#8287;
     <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/KhanAcademy.md"><img width="10%" alt="Khan Academy" title="Khan Academy" src="https://i.imgur.com/JDUSzr2.png"/></a>
+    &#8287;&#8287;&#8287;&#8287;&#8287;
+    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/SPeak.md"><img width="40%" alt="SPeak" title="SPeak" src="https://i.imgur.com/6uqbqFJ.png"/></a>
     <br><br>
     <a href="#"><img src="https://komarev.com/ghpvc/?username=CMSP&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
