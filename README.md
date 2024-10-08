@@ -3,6 +3,9 @@
 
 ---
 
+<p align="center"><strong>CMSP Plataforma Hacks</strong></p>
+<p align="center">Neste repositório, você irá encontrar scripts/websites para automatizar as tarefas do CMSP e de outras plataformas como Khan Academy, Alura e Speak.</p>
+<br><br>
 <p align="center"><strong>Para começar a usar os scripts/websites, basta clicar no botão abaixo da plataforma que deseja utilizar</strong></p>
 
 ---
@@ -18,8 +21,5 @@
     <br><br>
     <a href="#"><img src="https://komarev.com/ghpvc/?username=CMSP&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
-
-<p align="center">Neste repositório, você irá encontrar scripts e um website para automatizar as tarefas do CMSP e de outras plataformas como Khan Academy, Alura e Speak.</p>
-<br>
 
 ---
