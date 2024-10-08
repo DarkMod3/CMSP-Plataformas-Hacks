@@ -1,3 +1,5 @@
+<p align="center">$${\color{green}ESTE \space WEBSITE \space NÃO \space APRESENTA \space NENHUM \space RISCO \space DE \space BLOQUEIAR \space SUA \space CONTA \space DO \space CMSP}$$</p>
+
 ---
 
 <a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=0d1117&center=true&vCenter=true&repeat=false&width=435&height=30&lines=CMSP+Tareafas"/>
@@ -11,4 +13,4 @@
 
 ---
 
-<p align="center">Para fazer as tarefas automaticamente, basta clicar no botão e você será redirecionado para o website. La vai ter a explicação do que fazer.</p>
+<p align="center">Website para realizar automaticamente as tarefas do CMSP (novas e expiradas). Para utilizá-lo, basta clicar no botão acima e seguir as instruções que estão lá!</p>
