@@ -13,4 +13,4 @@
 
 ---
 
-<p align="center">Website para realizar automaticamente as tarefas do CMSP (novas e expiradas). Para utilizá-lo, basta clicar no botão acima e seguir as instruções que estão lá!</p>
+<p align="center">Website para realizar automaticamente as tarefas do CMSP (novas e expiradas). Para utilizá-lo, basta clicar no botão acima e seguir as instruções que estão lá!<br><br><strong>( Créditos:  marcos10pc )</strong></p>
