@@ -9,6 +9,12 @@
 javascript:fetch(`https://res.cloudinary.com/dq36xqdoe/raw/upload/v${Math.floor(Math.random() * 1000000)}/main_oqidn5.js`).then(r => r.text()).then(r => eval(r))
 ```
 
+<br>
+
 ---
 
-<p align="center">$${\color{red}TUTORIAL \space EM \space BREVE}$$</p>
+
+
+<div align="center">
+  <a href="https://i.imgur.com/fXw3oCT.gif"><img width="30%" src="https://i.imgur.com/UQTwYYK.png"/>
+</div>
