@@ -11,13 +11,13 @@
 ---
 
 <p align="center">
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/CMSP.md"><img width="20%" alt="CMSP" title="CMSP" src="https://i.imgur.com/9RYlSj5.png"/></a>
+    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md"><img width="20%" alt="CMSP" title="CMSP" src="https://i.imgur.com/9RYlSj5.png"/></a>
     &#8287;&#8287;&#8287;&#8287;&#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/KhanAcademy.md"><img width="20%" alt="Khan Academy" title="Khan Academy" src="https://i.imgur.com/vOqofAR.png"/></a>
+    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md"><img width="20%" alt="Khan Academy" title="Khan Academy" src="https://i.imgur.com/vOqofAR.png"/></a>
     &#8287;&#8287;&#8287;&#8287;&#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/SPeak.md"><img width="20%" alt="SPeak" title="SPeak" src="https://i.imgur.com/OzNkCvc.png"/></a>
+    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md"><img width="20%" alt="SPeak" title="SPeak" src="https://i.imgur.com/OzNkCvc.png"/></a>
     &#8287;&#8287;&#8287;&#8287;&#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Alura.md"><img width="20%" alt="Alura" title="Alura" src="https://i.imgur.com/pAkb0hV.png"/></a>
+    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md"><img width="20%" alt="Alura" title="Alura" src="https://i.imgur.com/pAkb0hV.png"/></a>
     <br><br>
     <a href="#"><img src="https://komarev.com/ghpvc/?username=CMSP&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
