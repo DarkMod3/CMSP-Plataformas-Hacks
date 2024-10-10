@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao GitHub de Hacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Fundo escuro */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda a altura da tela */
+            text-align: center;
+        }
+        .container {
+            max-width: 600px; /* Limita a largura do conteúdo */
+            padding: 20px;
+            background-color: #1e1e1e; /* Fundo do container */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            transition: color 0.3s;
+        }
+        p:hover {
+            color: #ffffff; /* Altera a cor ao passar o mouse */
+        }
+        .button {
+            background-color: #6f2c91; /* Roxo */
+            color: white;
+            padding: 15px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block; /* Para garantir que os botões fiquem lado a lado */
+        }
+        .button:hover {
+            background-color: #4b1f6d; /* Roxo mais escuro */
+            transform: scale(1.05); /* Animação de aumento ao passar o mouse */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .content {
+            animation: fadeIn 1s; /* Animação de entrada */
+        }
+        .footer-text {
+            color: #b0b0b0;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .footer-text strong {
+            color: #ff6f61; /* Destaque para o texto em negrito */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Bem-vindo à anarquia que o governo chama de novo ensino médio.</h2>
+            <p>
+                Nesse GitHub você vai encontrar hacks para "facilitar" fazer suas tarefas das plataformas do CMSP. Nenhuma delas foram criadas por mim, mas algumas foram editadas para melhorar.
+            </p>
+            <div>
+                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md" class="button">CMSP Tarefas</a>
+                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md" class="button">Khan Academy</a>
+                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md" class="button">SPeak</a>
+                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md" class="button">Alura</a>
+            </div>
+            <p class="footer-text">
+                O governo não tem a mínima ideia do que a gente aluno passa nessas bostas de plataformas e ainda querem dizer que o <strong>"Novo Ensino Médio"</strong> foi a melhor coisa que eles já fizeram. Sinceramente, foi a pior decisão deles. Foda-se também esse novo ensino médio e plataformas, ninguém liga.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
