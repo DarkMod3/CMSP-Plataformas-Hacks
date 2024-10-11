@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo ao GitHub de Hacks</title>
+    <title>CMSP Plataformas Hacks</title>
+    <link rel="icon" href="https://i.imgur.com/YJk8r8E.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Fundo escuro */
-            color: #ffffff; /* Texto branco */
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Ocupa toda a altura da tela */
+            height: 100vh;
             text-align: center;
+            user-select: none;
         }
         .container {
-            max-width: 600px; /* Limita a largura do conteúdo */
-            padding: 20px;
-            background-color: #1e1e1e; /* Fundo do container */
+            max-width: 600px;
+            padding: 30px;
+            background-color: #1e1e1e;
             border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
         }
         h1 {
             color: #e0e0e0;
             margin-bottom: 20px;
+            animation: fadeIn 1s;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #e0e0e0;
+            display: inline-block;
+        }
+        h2, h3 {
+            color: #e0e0e0;
+            margin-bottom: 15px;
         }
         p {
             color: #b0b0b0;
             margin-bottom: 30px;
             transition: color 0.3s;
+            font-size: 1.1em;
         }
         p:hover {
-            color: #ffffff; /* Altera a cor ao passar o mouse */
+            color: #ffffff;
         }
         .button {
-            background-color: #6f2c91; /* Roxo */
+            background-color: #4169e1;
             color: white;
             padding: 15px 20px;
             margin: 10px;
@@ -46,12 +61,14 @@
             text-decoration: none;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            display: inline-block; /* Para garantir que os botões fiquem lado a lado */
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .button:hover {
-            background-color: #4b1f6d; /* Roxo mais escuro */
-            transform: scale(1.05); /* Animação de aumento ao passar o mouse */
+            background-color: #4169e1;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
         @keyframes fadeIn {
             from {
@@ -61,9 +78,6 @@
                 opacity: 1;
             }
         }
-        .content {
-            animation: fadeIn 1s; /* Animação de entrada */
-        }
         .footer-text {
             color: #b0b0b0;
             margin-top: 20px;
@@ -71,27 +85,76 @@
             line-height: 1.5;
         }
         .footer-text strong {
-            color: #ff6f61; /* Destaque para o texto em negrito */
+            color: #ff6f61;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .button {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <h2>Bem-vindo à anarquia que o governo chama de novo ensino médio.</h2>
+            <h1 id="title"></h1>
             <p>
-                Nesse GitHub você vai encontrar hacks para "facilitar" fazer suas tarefas das plataformas do CMSP. Nenhuma delas foram criadas por mim, mas algumas foram editadas para melhorar.
+                Neste GitHub, você encontrará hacks para "facilitar" suas tarefas nas plataformas do CMSP. Nenhum dos hacks foi criado por mim, mas alguns foram editados para serem melhorados.
             </p>
+            <p>────────────────────────────────────────────────</p>
             <div>
+                <h3><strong>HACKS ATUALIZADOS TODOS OS DIAS</strong></h3>
                 <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md" class="button">CMSP Tarefas</a>
                 <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md" class="button">Khan Academy</a>
                 <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md" class="button">SPeak</a>
                 <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md" class="button">Alura</a>
             </div>
+            <p>────────────────────────────────────────────────</p>
             <p class="footer-text">
-                O governo não tem a mínima ideia do que a gente aluno passa nessas bostas de plataformas e ainda querem dizer que o <strong>"Novo Ensino Médio"</strong> foi a melhor coisa que eles já fizeram. Sinceramente, foi a pior decisão deles. Foda-se também esse novo ensino médio e plataformas, ninguém liga.
+                O governo não tem a mínima ideia do que os alunos passam nessas plataformas e ainda querem dizer que o <strong>"Novo Ensino Médio"</strong> foi a melhor coisa que eles já fizeram. Sinceramente, foi a pior decisão deles.
             </p>
         </div>
     </div>
+    
+    <script>
+        const title = "CMSP Plataformas Hacks";
+        const titleElement = document.getElementById("title");
+        let index = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentText = title.slice(0, index);
+            titleElement.textContent = currentText;
+
+            if (isDeleting) {
+                index--;
+                if (index < 0) {
+                    isDeleting = false;
+                    index = 0;
+                    setTimeout(type, 800);
+                } else {
+                    setTimeout(type, 80);
+                }
+            } else {
+                index++;
+                if (index > title.length) {
+                    isDeleting = true;
+                    setTimeout(type, 1000);
+                } else {
+                    setTimeout(type, 150);
+                }
+            }
+        }
+
+        type(); // Inicia o efeito de digitação
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
