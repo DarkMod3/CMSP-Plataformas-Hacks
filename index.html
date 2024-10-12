@@ -6,6 +6,7 @@
     <title>CMSP Plataformas Hacks</title>
     <link rel="icon" href="https://i.imgur.com/YJk8r8E.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -51,24 +52,36 @@
         p:hover {
             color: #ffffff;
         }
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centraliza os botões horizontalmente */
+            flex-wrap: nowrap; /* Impede a quebra dos botões para uma nova linha */
+            overflow-x: auto; /* Adiciona uma barra de rolagem se necessário */
+            margin-bottom: 30px;
+        }
         .button {
             background-color: #4169e1;
             color: white;
             padding: 15px 20px;
-            margin: 10px;
+            margin: 5px; /* Menor margem para evitar quebra de linha */
             border: none;
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-            display: inline-block;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto; /* Não permite que os botões se estiquem */
+            max-width: 150px; /* Limita a largura máxima de cada botão */
         }
         .button:hover {
             background-color: #4169e1;
             transform: scale(1.05);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .button i {
+            margin-right: 8px;
         }
         @keyframes fadeIn {
             from {
@@ -106,12 +119,12 @@
                 Neste GitHub, você encontrará hacks para "facilitar" suas tarefas nas plataformas do CMSP. Nenhum dos hacks foi criado por mim, mas alguns foram editados para serem melhorados.
             </p>
             <p>────────────────────────────────────────────────</p>
-            <div>
-                <h3><strong>HACKS ATUALIZADOS TODOS OS DIAS</strong></h3>
-                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md" class="button">CMSP Tarefas</a>
-                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md" class="button">Khan Academy</a>
-                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md" class="button">SPeak</a>
-                <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md" class="button">Alura</a>
+            <h3><strong>HACKS ATUALIZADOS TODOS OS DIAS</strong></h3>
+            <div class="button-container">
+                <button id="cmspButton" class="button"><i class="fas fa-school"></i> CMSP</button>
+                <button id="khanButton" class="button"><i class="fas fa-graduation-cap"></i> Khan</button>
+                <button id="speakButton" class="button"><i class="fas fa-comments"></i> SPeak</button>
+                <button id="aluraButton" class="button"><i class="fas fa-laptop-code"></i> Alura</button>
             </div>
             <p>────────────────────────────────────────────────</p>
             <p class="footer-text">
@@ -121,40 +134,42 @@
     </div>
     
     <script>
-        const title = "CMSP Plataformas Hacks";
-        const titleElement = document.getElementById("title");
-        let index = 0;
-        let isDeleting = false;
-
-        function type() {
-            const currentText = title.slice(0, index);
-            titleElement.textContent = currentText;
-
-            if (isDeleting) {
-                index--;
-                if (index < 0) {
-                    isDeleting = false;
-                    index = 0;
-                    setTimeout(type, 800);
-                } else {
-                    setTimeout(type, 80);
+        async function copyToClipboard(url) {
+            try {
+                const response = await fetch(url);
+    
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar o script');
                 }
-            } else {
-                index++;
-                if (index > title.length) {
-                    isDeleting = true;
-                    setTimeout(type, 1000);
-                } else {
-                    setTimeout(type, 150);
-                }
+    
+                const code = await response.text();
+                await navigator.clipboard.writeText(code);
+                alert(' \nScript copiado com sucesso!\n ');
+    
+            } catch (error) {
+                console.error('Erro:', error);
+                alert(' \nErro ao copiar o Script. Tente novamente.\n ');
             }
         }
 
-        type(); // Inicia o efeito de digitação
-
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
+        document.getElementById('cmspButton').addEventListener('click', async () => {
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md', '_blank');
         });
-    </script>
+
+        document.getElementById('khanButton').addEventListener('click', async () => {
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/KhanAcademy.js');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md', '_blank');
+        });
+    
+        document.getElementById('speakButton').addEventListener('click', async () => {
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/SPeak.js');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md', '_blank');
+        });
+    
+        document.getElementById('aluraButton').addEventListener('click', async () => {
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/Alura.js');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md', '_blank');
+        });
+    </script>    
 </body>
 </html>
