@@ -23,3 +23,6 @@
 </p>
 
 ---
+
+> [!IMPORTANT]  
+> Todos os scripts agora estão no website do CMSP Plataformas Hacks. Para copiar o script, basta entrar no site e clicar no botão com o nome da plataforma desejada, e o script será copiado automaticamente.
