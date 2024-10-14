@@ -9,8 +9,6 @@
 // @grant        none
 // ==/UserScript==
 
-//TODO: fazer opcao pra marcar video como concluido
-
 let notificationCount = 0;
 
 function abacate(originalUrl) {
