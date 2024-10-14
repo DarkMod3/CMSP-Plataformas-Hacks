@@ -10,3 +10,5 @@
 
 > [!NOTE]  
 > <h3 align="center">Como faço para usar?</h3><br><br>1. Clique no botão "CMSP CHEETO V2" e você será redirecionado para o website.<br><br>2. No website, é só você colocar RA + Dígito + UF depois, colocar a senha e escolher o que você deseja fazer: Diarias ou Expiradas.<br><br>3. Depois de escolher qual você deseja, é só fazer o hCaptcha, clicar no botão e aguardar as tarefas serem concluídas.<br><br> 
+
+---
