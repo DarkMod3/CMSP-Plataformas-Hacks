@@ -1,19 +1,15 @@
-<p align="center">$${\color{green}ESTE \space SCRIPT \space NÃO \space APRESENTA \space NENHUM \space RISCO \space DE \space BLOQUEIAR \space SUA \space CONTA \space DO \space SPEAK}$$</p>
-
 ---
 
 <a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=0d1117&center=true&vCenter=true&repeat=false&width=435&height=30&lines=SPeak"/>
 <a href="#"><img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=false&width=435&height=30&lines=SPeak"/>
+<br><br>
+<div align="center"><a href="https://bit.ly/CMSP-Plataformas-Hacks"><img src="https://i.imgur.com/NTZU9ZY.png"></a></div>
+<br><br><br>
 
-<br>
+---
 
-<div align="center">
-  <a href="https://bit.ly/CMSP-Plataformas-Hacks" target="_blank"><img src="https://img.shields.io/badge/-CMSP Plataformas Hacks-4169e1?style=for-the-badge&logo=htmx&logoColor=white"></a>
-</div>
-
-<br>
-
-<p align="center">Clique no botão acima para ser redirecionado para o website. Lá no website, basta clicar no botão com o nome da plataforma que deseja e o script será copiado automaticamente.</strong></p>
+> [!NOTE]  
+> <h3 align="center">Como faço para usar?</h3><br><br>1. Clique no botão "CMSP PLATAFORMAS HACKS" e você será redirecionado para o website.<br><br>2. No website, é só você clicar no botão 'SPeak' que o script será copiado automaticamente.<br><br>3. Depois do script ser copiado, basta criar um novo favorito com o script na URL. ( Caso precise, o tutorial está abaixo )<br><br> 
 
 ---
 
