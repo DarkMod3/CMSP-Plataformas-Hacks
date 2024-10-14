@@ -15,6 +15,7 @@
 
 > [!WARNING]  
 > <h3 align="center">AVISO</h3><br><p align=center>Não faça mais que 3 unidades no dia do curso, porque senão sua conta da Alura será bloqueada.</p><br> 
+
 ---
 
 <div align="center">
