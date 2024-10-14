@@ -125,6 +125,7 @@
                 <button id="khanButton" class="button"><i class="fas fa-graduation-cap"></i> Khan</button>
                 <button id="speakButton" class="button"><i class="fas fa-comments"></i> SPeak</button>
                 <button id="aluraButton" class="button"><i class="fas fa-laptop-code"></i> Alura</button>
+                <button id="mesalvaButton" class="button"><i class="fas fa-receipt"></i> MeSalva</button>
             </div>
             <p>────────────────────────────────────────────────</p>
             <p class="footer-text">
@@ -204,6 +205,11 @@
         document.getElementById('aluraButton').addEventListener('click', async () => {
             await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/Alura.js');
             window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md', '_blank');
+        });
+
+        document.getElementById('mesalvaButton').addEventListener('click', async () => {
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/MeSalva.js');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/MeSalva.md', '_blank');
         });
     </script>    
 </body>
