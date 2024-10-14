@@ -13,9 +13,6 @@
 > [!NOTE]  
 > <h3 align="center">Como faço para usar?</h3><br><br>1. Clique no botão "CMSP PLATAFORMAS HACKS" e você será redirecionado para o website.<br><br>2. No website, é só você clicar no botão 'Alura' que o script será copiado automaticamente.<br><br>3. Depois do script ser copiado, instale a extensão Violentmonkey no navegador.<br><br>4. Depois de instalar o Violentmonkey no navegador, basta abrir as configurações da extensão.<br><br>5. Depois, clique em "Novo"; vai abrir uma janela onde você colocará o script e, em seguida, clique em "Salvar" e "Fechar".<br><br>6. Depois, é só abrir o site da Alura que ele irá começar a fazer seus cursos. ( Caso precise, o tutorial está abaixo )<br><br> 
 
-> [!WARNING]  
-> <h3 align="center">AVISO</h3><br><p align=center>Não faça mais que 3 unidades no dia do curso, porque senão sua conta da Alura será bloqueada.</p><br> 
-
 ---
 
 <div align="center">
