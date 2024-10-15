@@ -28,3 +28,8 @@
 
 > [!IMPORTANT]  
 > Todos os scripts agora estão no website do CMSP Plataformas Hacks. Para copiar o script, basta entrar no site e clicar no botão com o nome da plataforma desejada, e o script será copiado automaticamente.
+
+---
+
+> [!NOTE]  
+> Se vocês que conhecem o GitHub do CMSP Plataformas Hacks puderem divulgar o GitHub ou o site para amigos ou outras pessoas, eu ficaria muito grato! Obrigado! ( E obviamente porque eu quero fama também né KKKK )
