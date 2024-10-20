@@ -4,32 +4,24 @@
 ---
 
 <p align="center"><strong>CMSP Plataforma Hacks</strong></p>
-<p align="center">Neste repositório, você irá encontrar scripts/websites para automatizar as tarefas do CMSP e de outras plataformas como Khan Academy, Alura e Speak.</p>
+<p align="center">Neste repositório, você encontra scripts/hacks para automatizar e facilitar as tarefas nas plataformas do CMSP, que incluem CMSP Tarefas, Khan Academy, SPeak, Alura, Me Salva e Leia SP.</p>
 <br><br>
-<p align="center"><strong>Para começar a usar os scripts/websites, basta clicar no botão abaixo da plataforma que deseja utilizar</strong></p>
+<p align="center"><strong>Para começar a usar os scripts/hacks, basta clicar no botão abaixo da plataforma que deseja utilizar</strong></p>
 
 ---
 
 <p align="center">
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md"><img width="15%" alt="CMSP" title="CMSP" src="https://i.imgur.com/9RYlSj5.png"/></a>
+    <a href="https://bit.ly/CMSP-Plataformas-Hacks"><img width="15%" alt="CMSP" title="CMSP" src="https://i.imgur.com/9RYlSj5.png"/></a>
     &#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md"><img width="15%" alt="Khan Academy" title="Khan Academy" src="https://i.imgur.com/vOqofAR.png"/></a>
+    <a href="https://bit.ly/CMSP-Plataformas-Hacks"><img width="15%" alt="Khan Academy" title="Khan Academy" src="https://i.imgur.com/vOqofAR.png"/></a>
     &#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md"><img width="15%" alt="SPeak" title="SPeak" src="https://i.imgur.com/OzNkCvc.png"/></a>
+    <a href="https://bit.ly/CMSP-Plataformas-Hacks"><img width="15%" alt="SPeak" title="SPeak" src="https://i.imgur.com/OzNkCvc.png"/></a>
     &#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md"><img width="15%" alt="Alura" title="Alura" src="https://i.imgur.com/pAkb0hV.png"/></a>
+    <a href="https://bit.ly/CMSP-Plataformas-Hacks"><img width="15%" alt="Alura" title="Alura" src="https://i.imgur.com/pAkb0hV.png"/></a>
     &#8287;
-    <a href="https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/MeSalva.md"><img width="15%" alt="MeSalva" title="MeSalva" src="https://i.imgur.com/HNLmshc.png"/></a>
+    <a href="https://bit.ly/CMSP-Plataformas-Hacks"><img width="15%" alt="MeSalva" title="MeSalva" src="https://i.imgur.com/HNLmshc.png"/></a>
     <br><br>
     <a href="#"><img src="https://komarev.com/ghpvc/?username=CMSP&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
 
 ---
-
-> [!IMPORTANT]  
-> Todos os scripts agora estão no website do CMSP Plataformas Hacks. Para copiar o script, basta entrar no site e clicar no botão com o nome da plataforma desejada, e o script será copiado automaticamente.
-
----
-
-> [!NOTE]  
-> Se vocês que conhecem o GitHub do CMSP Plataformas Hacks puderem divulgar o GitHub ou o site para amigos ou outras pessoas, eu ficaria muito grato! Obrigado! ( E obviamente porque eu quero fama também né KKKK )
