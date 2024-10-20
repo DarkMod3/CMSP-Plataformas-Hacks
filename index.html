@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de hacks atualizados diariamente para facilitar as tarefas nas plataformas do CMSP">
     <title>CMSP Plataformas Hacks</title>
     <link rel="icon" href="https://i.imgur.com/YJk8r8E.png">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -16,11 +18,27 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
             user-select: none;
+            position: relative;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFFFFF;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3658b5;
         }
         .container {
             max-width: 600px;
@@ -28,16 +46,21 @@
             background-color: #1e1e1e;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 80px;
+            width: 100%;
+            min-height: 150px;
         }
         h1 {
             color: #e0e0e0;
             margin-bottom: 20px;
             animation: fadeIn 1s;
+            display: inline-block;
+        }
+        h1 span {
             white-space: nowrap;
             overflow: hidden;
             border-right: 4px solid #e0e0e0;
-            display: inline-block;
         }
         h2, h3 {
             color: #e0e0e0;
@@ -54,16 +77,21 @@
         }
         .button-container {
             display: flex;
-            justify-content: center; /* Centraliza os botões horizontalmente */
-            flex-wrap: nowrap; /* Impede a quebra dos botões para uma nova linha */
-            overflow-x: auto; /* Adiciona uma barra de rolagem se necessário */
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 30px;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 5px 0;
         }
         .button {
             background-color: #4169e1;
             color: white;
             padding: 15px 20px;
-            margin: 5px; /* Menor margem para evitar quebra de linha */
+            margin: 5px;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -72,13 +100,14 @@
             transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
             display: inline-flex;
             align-items: center;
-            flex: 0 0 auto; /* Não permite que os botões se estiquem */
-            max-width: 150px; /* Limita a largura máxima de cada botão */
+            flex: 0 0 auto;
+            max-width: 150px;
         }
         .button:hover {
-            background-color: #4169e1;
+            background-color: #3658b5;
             transform: scale(1.05);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease-in-out;
         }
         .button i {
             margin-right: 8px;
@@ -109,34 +138,69 @@
                 font-size: 14px;
             }
         }
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        footer .credits {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        footer .credits div {
+            text-align: center;
+        }
+        footer .credits img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+        footer .credits img:hover {
+            transform: scale(1.1);
+        }
+        footer p {
+            margin-top: 10px;
+            color: #999;
+        }
+        hr {
+            border: 1px solid #b0b0b0;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
+    <p></p>
     <div class="container">
         <div class="content">
-            <h1 id="title"></h1>
-            <p>
-                Neste GitHub, você encontrará hacks para "facilitar" suas tarefas nas plataformas do CMSP. Nenhum dos hacks foi criado por mim, mas alguns foram editados para serem melhorados.
-            </p>
-            <p>────────────────────────────────────────────────</p>
-            <h3><strong>HACKS ATUALIZADOS TODOS OS DIAS</strong></h3>
+            <h1 id="title"><span></span></h1>
+            <p>Nesse site você irá encontrar hacks para facilitar suas tarefas nas plataformas do CMSP. Nenhum dos hacks foi criado por mim, mas alguns foram editados para serem melhorados.</p>
+            <hr>
             <div class="button-container">
-                <button id="cmspButton" class="button"><i class="fas fa-school"></i> CMSP</button>
-                <button id="khanButton" class="button"><i class="fas fa-graduation-cap"></i> Khan</button>
-                <button id="speakButton" class="button"><i class="fas fa-comments"></i> SPeak</button>
-                <button id="aluraButton" class="button"><i class="fas fa-laptop-code"></i> Alura</button>
-                <button id="mesalvaButton" class="button"><i class="fas fa-receipt"></i> MeSalva</button>
+                <div class="button-row">
+                    <button id="cmspButton" class="button" aria-label="CMSP"><i class="fas fa-school" aria-hidden="true"></i> CMSP</button>
+                    <button id="khanButton" class="button" aria-label="Khan Academy"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Khan</button>
+                    <button id="speakButton" class="button" aria-label="SPeak"><i class="fas fa-comments" aria-hidden="true"></i> SPeak</button>
+                </div>
+                <div class="button-row">
+                    <button id="aluraButton" class="button" aria-label="Alura"><i class="fas fa-laptop-code" aria-hidden="true"></i> Alura</button>
+                    <button id="mesalvaButton" class="button" aria-label="MeSalva"><i class="fas fa-receipt" aria-hidden="true"></i> MeSalva</button>
+                </div>
             </div>
-            <p>────────────────────────────────────────────────</p>
+            <hr>
             <p class="footer-text">
-                O governo não tem a mínima ideia do que os alunos passam nessas plataformas e ainda querem dizer que o <strong>"Novo Ensino Médio"</strong> foi a melhor coisa que eles já fizeram. Sinceramente, foi a pior decisão deles.
+                O governo não tem a mínima ideia do que os alunos passam nessas plataformas e ainda querem dizer que o <strong>Novo Ensino Médio</strong> foi a melhor coisa que eles já fizeram. Sinceramente, foi a pior ideia que eles tiveram.
             </p>
         </div>
     </div>
     
     <script>
-                const title = "CMSP Plataformas Hacks";
-        const titleElement = document.getElementById("title");
+        const title = "CMSP Plataformas Hacks";
+        const titleElement = document.getElementById("title").querySelector("span");
         let index = 0;
         let isDeleting = false;
 
@@ -164,7 +228,7 @@
             }
         }
 
-        type(); // Inicia o efeito de digitação
+        type();
 
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -173,44 +237,61 @@
         async function copyToClipboard(url) {
             try {
                 const response = await fetch(url);
-    
                 if (!response.ok) {
                     throw new Error('Erro ao buscar o script');
                 }
-    
                 const code = await response.text();
                 await navigator.clipboard.writeText(code);
                 alert(' \nScript copiado com sucesso!\n ');
-    
             } catch (error) {
-                console.error('Erro:', error);
-                alert(' \nErro ao copiar o Script. Tente novamente.\n ');
+                alert(' \nErro ao copiar o script. Tente novamente.\n ');
             }
         }
 
         document.getElementById('cmspButton').addEventListener('click', async () => {
-            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/CMSP.md', '_blank');
+            window.open('https://cmspcheeto.squareweb.app/', '_blank');
         });
 
         document.getElementById('khanButton').addEventListener('click', async () => {
-            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/KhanAcademy.js');
-            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/KhanAcademy.md', '_blank');
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/DarkCloud/refs/heads/Main/CMSP-Plataformas-Hacks/Khan');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/TutorialBK.md', '_blank');
         });
     
         document.getElementById('speakButton').addEventListener('click', async () => {
-            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/SPeak.js');
-            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/SPeak.md', '_blank');
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/DarkCloud/refs/heads/Main/CMSP-Plataformas-Hacks/SPeak');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/TutorialBK.md', '_blank');
         });
     
         document.getElementById('aluraButton').addEventListener('click', async () => {
-            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/Alura.js');
-            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/Alura.md', '_blank');
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/DarkCloud/refs/heads/Main/CMSP-Plataformas-Hacks/Alura');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/TutorialVM.md', '_blank');
         });
 
         document.getElementById('mesalvaButton').addEventListener('click', async () => {
-            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/CMSP-Plataformas-Hacks/Main/Hacks/MeSalva.js');
-            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/Hacks/MeSalva.md', '_blank');
+            await copyToClipboard('https://raw.githubusercontent.com/DarkMod3/DarkCloud/refs/heads/Main/CMSP-Plataformas-Hacks/MeSalva');
+            window.open('https://github.com/DarkMod3/CMSP-Plataformas-Hacks/blob/Main/TutorialVM.md', '_blank');
         });
     </script>    
+    <footer>
+        <p></p>
+        <div class="credits">
+            <div>
+                <img src="https://i.imgur.com/qvC9Nrx.png" alt="DarkModeaa" title="Criador do CMSP Plataformas Hacks">
+                <p class="footer-text">DarkMode</p>
+            </div>
+            <div>
+                <img src="https://i.imgur.com/Gaynayc.png" alt="Nix" title="Desenvolvedor do Khanware">
+                <p class="footer-text">Nix</p>
+            </div>
+            <div>
+                <img src="https://i.imgur.com/4zXrfHx.png" alt="marcos10pc" title="Desenvolvedor dos scripts ( CMSP, Alura e MeSalva )">
+                <p class="footer-text">marcos10pc</p>
+            </div>
+            <div>
+                <img src="https://i.imgur.com/qdQ5RRL.jpeg" alt="Hyxam" title="Desenvolvedor do script para SPeak">
+                <p class="footer-text">Hyxam</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
